@@ -13,10 +13,10 @@ RUN apt-get update; apt-get install -y \
     zip
 
 # no default - if null it will start piwik in initial mode
-# ENV PIWIK_MYSQL_USER=
+ENV PIWIK_MYSQL_USER=
 
 # no default - if null it will start piwik in initial mode
-# ENV PIWIK_MYSQL_PASSWORD=
+ENV PIWIK_MYSQL_PASSWORD=
 
 # default: mysql
 ENV PIWIK_MYSQL_HOST=mysql
